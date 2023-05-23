@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name":"g++ - build and debug activate file",
+            "type":"cppdbg",
+            "request": "launch",
+            //"program": "${workspaceRoot}/${fileBasenameNoExtension}",  // 可调式可执行文件的绝对路径
+            "program": "${workspaceFolder}/build/app/testMonoBA",
+            "args":[],
+            "stopAtEntry": false,
+            "cwd":"${workspaceFolder}",        // 项目顶层目录（TEST03）
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build",  // 调试前的task，需要跟task.json中某一task的label一样
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

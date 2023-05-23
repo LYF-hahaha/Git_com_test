@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "type_traits": "cpp",
+        "initializer_list": "cpp"
+    },
+    "window.zoomLevel": 0.9,  // 左边文件栏+底部终端整体缩放
+    "terminal.integrated.fontWeight": "normal",  // 终端命令字体粗细
+    "terminal.integrated.fontWeightBold": "normal",  // 终端默认信息字体粗细
+    "editor.fontSize": 14,  // 编辑栏字体大小
+    "editor.fontWeight": "normal"  // 编辑栏字体加粗
+}
